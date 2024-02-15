@@ -52,16 +52,21 @@ header {
   margin-bottom: 30px;
 }
 
+.hidden {
+  display: none;
+}
+
 main {
   color: #38598b;
   margin-bottom: 30px;
 }
 
-#poem {
+.poem {
   background-color: white;
   border-left: 3px solid #38598b;
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  display: block;
   font-size: 14px;
   line-height: 2;
   padding: 20px;
