@@ -5,8 +5,6 @@ function displayPoem(response) {
     delay: 1,
     cursor: "",
   });
-
-  console.log(response.data.answer);
 }
 
 function generatePoem(event) {
@@ -22,8 +20,6 @@ function generatePoem(event) {
   let poemElement = document.querySelector("#poem");
   poemElement.classList.add("poem");
   poemElement.innerHTML = `Generating a poem about ${instructionsInput.value}...`;
-
-  console.log(`Prompt: ${prompt}`);
 
   axios.get(apiURL).then(displayPoem);
 }
