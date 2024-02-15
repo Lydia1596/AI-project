@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Poem Generator</title>
   </head>
@@ -24,13 +25,11 @@
             autofocus
             required
             class="text-input"
+            id="instructions"
           />
           <input type="submit" class="button-input" />
         </form>
-        <div id="poem">
-          The poem will go here <br />
-          The poem will go here <br />
-        </div>
+        <div id="poem"></div>
       </main>
       <footer>
         This project was coded by Lydia Prentice and is
